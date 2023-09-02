@@ -1,0 +1,105 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  border-radius: 4px;
+
+  &__header {
+    background-color: white;
+    box-shadow: 0px 1px 4px 0px rgba(30, 30, 30, 0.1);
+    height: 110px;
+    border-radius: 4px;
+    padding: 10px 16px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__headerInfo {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+  }
+
+  &__name {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+  }
+
+  &__descr {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 6px;
+  }
+
+  &__headerButton {
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+
+    img {
+      filter: brightness(0) saturate(100%) invert(42%) sepia(11%) saturate(741%)
+        hue-rotate(175deg) brightness(99%) contrast(94%);
+    }
+
+    &:hover {
+      background-color: #4198c5;
+      img {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(10%)
+          saturate(7493%) hue-rotate(182deg) brightness(102%) contrast(113%);
+      }
+    }
+  }
+
+  &__tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 13px;
+    padding: 0 20px 0 10px;
+    color: #616f82;
+    font-size: 14px;
+  }
+
+  &__tabsList {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+
+  &__tabItem {
+    cursor: pointer;
+  }
+
+  &__verticalDivider {
+    background-color: #cdcdcd;
+    width: 1px;
+    height: 20px;
+  }
+
+  &__pages {
+    background-color: white;
+    margin-top: 13px;
+    padding: 15px;
+    flex-grow: 1;
+  }
+
+  &__navLink {
+    color: #616f82;
+    text-decoration: none;
+  }
+
+  &__pages {
+    box-shadow: 0px 1px 4px 0px rgba(30, 30, 30, 0.1);
+    border-radius: 4px;
+  }
+}
+.active-link {
+  color: red;
+}

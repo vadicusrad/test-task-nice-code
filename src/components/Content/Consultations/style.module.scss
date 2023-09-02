@@ -1,0 +1,39 @@
+.consultations {
+  position: relative;
+}
+.consultation {
+  &__image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f1f2f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  &__date {
+    color: #616f82;
+    font-size: 14px;
+  }
+
+  &:hover {
+    &__image {
+      background-color: #4198c5;
+    }
+  }
+}
+
+.redText {
+  position: absolute;
+  bottom: 7px;
+  right: 11px;
+  color: red;
+  font-size: 14px;
+}

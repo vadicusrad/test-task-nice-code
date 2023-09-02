@@ -1,0 +1,23 @@
+.dropdownList {
+  width: 230px;
+  height: 88px;
+  background-color: white;
+  position: absolute;
+  top: 20px;
+  right: 17px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 4px 0px rgba(30, 30, 30, 0.1);
+  list-style: none;
+  padding: 9px 0;
+  font-size: 14px;
+
+  &__item {
+    height: 36px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    &:hover {
+      background-color: #f1f2f3;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.videos {
+  position: relative;
+  &__text {
+    flex-grow: 1;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 17px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #616f82;
+  }
+}
